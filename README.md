@@ -38,7 +38,7 @@ $ composer test
 <?php
 require __DIR__ . '/vendor/autoload.php';
 
-use Voyula\Validator\Validator;
+use Voyula\Validate\Validator;
 
 $validator = new Validator;
 
@@ -100,7 +100,7 @@ Licensed under the MIT License. See [License File](LICENSE.md) for more informat
 
 
 [link-travis]: https://travis-ci.org/voyula/validate
-[link-styleci]: https://github.styleci.io/repos/136959565
+[link-styleci]: https://github.styleci.io/repos/142753977
 [link-coverage]: https://scrutinizer-ci.com/g/voyula/validate
 [link-scrutinizer]: https://scrutinizer-ci.com/g/voyula/validate
 
