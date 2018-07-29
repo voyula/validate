@@ -1,4 +1,4 @@
-# Validator
+# Validate
 
 [![Build Status][ico-travis]][link-travis]
 [![StyleCI][ico-styleci]][link-styleci]
@@ -16,7 +16,7 @@ PHP library for data format validation.
 Via [Composer](https://getcomposer.org/)
 
 ```bash
-$ composer require voyula/validator
+$ composer require voyula/validate
 ```
 
 ## Testing
@@ -89,21 +89,21 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 Licensed under the MIT License. See [License File](LICENSE.md) for more information.
 
-[ico-travis]: https://img.shields.io/travis/voyula/Validator/master.svg?longCache=true&style=flat-square
+[ico-travis]: https://img.shields.io/travis/voyula/validate/master.svg?longCache=true&style=flat-square
 [ico-styleci]: https://github.styleci.io/repos/136959565/shield?branch=master
-[ico-coverage]: https://img.shields.io/scrutinizer/coverage/g/voyula/Validator.svg?longCache=true&style=flat-square
-[ico-scrutinizer]: https://img.shields.io/scrutinizer/g/voyula/Validator.svg?longCache=true&style=flat-square
+[ico-coverage]: https://img.shields.io/scrutinizer/coverage/g/voyula/validate.svg?longCache=true&style=flat-square
+[ico-scrutinizer]: https://img.shields.io/scrutinizer/g/voyula/validate.svg?longCache=true&style=flat-square
 
-[ico-version]: https://img.shields.io/packagist/v/voyula/validator.svg?longCache=true&style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/voyula/validator.svg?longCache=true&style=flat-square
-[ico-license]: https://img.shields.io/packagist/l/voyula/validator.svg?longCache=true&style=flat-square
+[ico-version]: https://img.shields.io/packagist/v/voyula/validate.svg?longCache=true&style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/voyula/validate.svg?longCache=true&style=flat-square
+[ico-license]: https://img.shields.io/packagist/l/voyula/validate.svg?longCache=true&style=flat-square
 
 
-[link-travis]: https://travis-ci.org/voyula/Validator
+[link-travis]: https://travis-ci.org/voyula/validate
 [link-styleci]: https://github.styleci.io/repos/136959565
-[link-coverage]: https://scrutinizer-ci.com/g/voyula/validator
-[link-scrutinizer]: https://scrutinizer-ci.com/g/voyula/validator
+[link-coverage]: https://scrutinizer-ci.com/g/voyula/validate
+[link-scrutinizer]: https://scrutinizer-ci.com/g/voyula/validate
 
-[link-version]: https://packagist.org/packages/voyula/validator
-[link-downloads]: https://packagist.org/packages/voyula/validator
+[link-version]: https://packagist.org/packages/voyula/validate
+[link-downloads]: https://packagist.org/packages/voyula/validate
 [link-license]: LICENSE.md
