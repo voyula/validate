@@ -1,25 +1,25 @@
 <?php
 /**
- * voyula/validator - PHP library for data format validation.
+ * voyula/validate - PHP library for data format validation.
  *
- * @link https://github.com/voyula/Validator
+ * @link https://github.com/voyula/validate
  * @author voyula <https://github.com/voyula>
  * @copyright (c) 2018, voyula
- * @license https://github.com/voyula/Validator/blob/1.0.1/LICENSE.md MIT License
+ * @license https://github.com/voyula/validate/blob/1.0.1/LICENSE.md MIT License
  */
-namespace Voyula\Validator\Tests;
+namespace Voyula\Validate\Tests;
 
 use PHPUnit\Framework\TestCase;
-use Voyula\Validator\Validation;
+use Voyula\Validate\Validation;
 
 /**
  * Class ValidationTest
- * @package Voyula\Validator\Tests
+ * @package Voyula\Validate\Tests
  */
 class ValidationTest extends TestCase
 {
     /**
-     * @var \Voyula\Validator\Validation
+     * @var \Voyula\Validate\Validation
      */
     private $validation;
 

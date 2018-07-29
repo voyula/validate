@@ -1,6 +1,6 @@
 <?php
 return [
-    'req'     => '%s alanı zosrunludur.',
+    'req'     => '%s alanı zorunludur.',
     'len'     => '%s alanı %d karakter olmalıdır.',
     'minLen'  => '%s alanı en az %d karakter olmalıdır.',
     'maxLen'  => '%s alanı en fazla %d karakter olmalıdır.',
