@@ -1,13 +1,13 @@
 <?php
 /**
- * voyula/validator - PHP library for data format validation.
+ * voyula/validate - PHP library for data format validation.
  *
  * @link https://github.com/voyula/validate
  * @author voyula <https://github.com/voyula>
  * @copyright (c) 2018, voyula
  * @license https://github.com/voyula/validate/blob/1.0.1/LICENSE.md MIT License
  */
-namespace Voyula\Validator\Exceptions;
+namespace Voyula\Validate\Exceptions;
 
 use Exception;
 
@@ -17,5 +17,4 @@ use Exception;
  */
 class ValidatorException extends Exception
 {
-    public $a;
 }
