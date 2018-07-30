@@ -42,12 +42,5 @@
         "sort-packages": true
     },
     "minimum-stability": "dev",
-    "prefer-stable": true,
-    "archive": {
-        "exclude": [
-            ".idea/",
-            "vendor/",
-            "tests/"
-        ]
-    }
+    "prefer-stable": true
 }
