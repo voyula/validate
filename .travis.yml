@@ -1,24 +1,17 @@
 sudo: false
-
 language: php
-
 php:
   - 7.2
-
 cache:
   directories:
     - $HOME/.composer/cache
-
 before_insall:
   - travis_retry composer self-update
-
 install:
   - travis_retry composer install --no-interaction --prefer-dist
-
 jobs:
   include:
     - stage: Test
       script: vendor/bin/phpunit
-
     - stage: Code Quality
       script: vendor/bin/phpcs
