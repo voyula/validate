@@ -12,6 +12,7 @@ install:
 jobs:
   include:
     - stage: Test
+      env: UNIT_TEST
       script: vendor/bin/phpunit
     - stage: Code Quality
       env: CODING_STANDARDS
