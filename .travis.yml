@@ -12,14 +12,12 @@ cache:
 before_insall:
   - travis_retry composer self-update
 
+install:
+  - travis_retry composer install --no-interaction --prefer-dist
+
 jobs:
   - stage: Test
-    install:
-      - travis_retry composer install --no-interaction --prefer-dist
-    script:
-      - vendor/bin/phpunit --coverage-text --coverage-clover=coverage.clover
+    script: vendor/bin/phpunit
+
   - stage: Code Quality
-    install:
-      - travis_retry composer install --no-interaction --prefer-dist
-    script:
-      - vendor/bin/phpcs
+    script: vendor/bin/phpcs
