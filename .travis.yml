@@ -16,8 +16,9 @@ install:
   - travis_retry composer install --no-interaction --prefer-dist
 
 jobs:
-  - stage: Test
-    script: vendor/bin/phpunit
+  include:
+    - stage: Test
+      script: vendor/bin/phpunit
 
-  - stage: Code Quality
-    script: vendor/bin/phpcs
+    - stage: Code Quality
+      script: vendor/bin/phpcs
