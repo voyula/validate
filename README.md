@@ -94,7 +94,7 @@ Licensed under the MIT License. See [License File](LICENSE.md) for more informat
 [ico-coverage]: https://img.shields.io/scrutinizer/coverage/g/voyula/validate.svg?longCache=true&style=flat-square
 [ico-scrutinizer]: https://img.shields.io/scrutinizer/g/voyula/validate.svg?longCache=true&style=flat-square
 
-[ico-version]: https://img.shields.io/npm/v/npm.svg?longCache=true&style=flat-square
+[ico-version]: https://img.shields.io/packagist/v/voyula/validate.svg?longCache=true&style=flat-square?longCache=true&style=flat-square
 [ico-downloads]: https://img.shields.io/packagist/dt/voyula/validate.svg?longCache=true&style=flat-square
 [ico-license]: https://img.shields.io/packagist/l/voyula/validate.svg?longCache=true&style=flat-square
 
