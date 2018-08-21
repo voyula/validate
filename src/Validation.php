@@ -13,8 +13,7 @@ namespace Voyula\Validate;
  * Class Validation
  * @package Voyula\Validate
  */
-class Validation
-{
+class Validation{
     use ValidationRolesTrait;
 
     /**
