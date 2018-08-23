@@ -32,7 +32,7 @@ $ composer test
 - PHP 7.2.4 or newer.
 - PHP-mbstring extension.
 
-## 🍌Usage
+## 🍽Usage
 
 ```php
 <?php
