@@ -19,7 +19,7 @@ Via [Composer](https://getcomposer.org/)
 $ composer require voyula/validate
 ```
 
-## Testing
+## 🔬Testing
 
 Via [PHPUnit](https://phpunit.de/)
 
