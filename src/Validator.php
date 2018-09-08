@@ -34,6 +34,7 @@ class Validator extends Validation
 
     /**
      * Validator constructor.
+     *
      * @param string $lang
      */
     public function __construct(string $lang = 'tr')
