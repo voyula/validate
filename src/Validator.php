@@ -11,6 +11,7 @@ namespace Voyula\Validate;
 
 /**
  * Class Validate
+ *
  * @package Voyula\Validate
  */
 class Validator extends Validation
