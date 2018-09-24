@@ -13,6 +13,7 @@ use PHPUnit\Framework\TestCase;
 
 /**
  * Class ValidationRolesTraitTest
+ *
  * @package Voyula\Validate\Tests
  */
 class ValidationRolesTraitTest extends TestCase
