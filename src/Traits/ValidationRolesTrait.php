@@ -7,7 +7,7 @@
  * @copyright (c) 2018, voyula
  * @license https://github.com/voyula/validate/blob/1.0.1/LICENSE.md MIT License
  */
-namespace Voyula\Validate;
+namespace Voyula\Validate\Traits;
 
 /**
  * Trait ValidationRolesTrait
