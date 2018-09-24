@@ -56,8 +56,8 @@ class ValidatorTest extends TestCase
             'item_count' => '572'
         ];
 
-        $this->assertTrue($validator->run($data));
-        $this->assertEmpty($validator->errors);
+        $this->assertTrue($this->validator->run($data));
+        $this->assertEmpty($this->validator->errors);
     }
 
     /**
