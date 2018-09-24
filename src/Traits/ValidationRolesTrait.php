@@ -11,6 +11,7 @@ namespace Voyula\Validate\Traits;
 
 /**
  * Trait ValidationRolesTrait
+ *
  * @package Voyula\Validate
  */
 trait ValidationRolesTrait
