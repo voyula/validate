@@ -13,6 +13,7 @@ use Exception;
 
 /**
  * Class ValidatorException
+ *
  * @package Voyula\Validator\Exceptions
  */
 class ValidatorException extends Exception

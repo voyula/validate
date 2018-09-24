@@ -20,12 +20,23 @@ use Voyula\Validate\Validator;
 class ValidatorTest extends TestCase
 {
     /**
+     * @var \Voyula\Validate\Validator
+     */
+    private $validator;
+
+    /**
+     * @return void
+     */
+    public function setUp(): void
+    {
+        $this->validator = new Validator;
+    }
+
+    /**
      * @return void
      */
     public function testTrueValidator(): void
     {
-        $validator = new Validator;
-
         $validator->addRules([
             ['username', 'Username', 'role:username|minLen:3|maxLen:15'],
             ['email', 'Email', 'email|maxLen:100'],
@@ -54,17 +65,15 @@ class ValidatorTest extends TestCase
      */
     public function testFalseValidator(): void
     {
-        $validator = new Validator;
-
-        $validator->addRules([
+        $this->validator->addRules([
             ['username', 'Username', 'role:username|minLen:3|maxLen:15'],
             ['email', 'Email', 'email|maxLen:100'],
             ['password', 'Password', 'minLen:4|maxLen:25'],
             ['password_again', 'Password Again', 'same:password']
         ]);
 
-        $validator->addRule('postal_code', 'Postal Code', 'digit|len:5');
-        $validator->addRule('item_count', 'Item Count', 'numeric|minNum:5|maxNum:1000');
+        $this->validator->addRule('postal_code', 'Postal Code', 'digit|len:5');
+        $this->validator->addRule('item_count', 'Item Count', 'numeric|minNum:5|maxNum:1000');
 
         $data = [
             'username' => 'pa',
@@ -75,7 +84,7 @@ class ValidatorTest extends TestCase
             'item_count' => '1001'
         ];
 
-        $this->assertFalse($validator->run($data));
-        $this->assertNotEmpty($validator->errors);
+        $this->assertFalse($this->validator->run($data));
+        $this->assertNotEmpty($this->validator->errors);
     }
 }

@@ -12,7 +12,7 @@ namespace Voyula\Validate\Traits;
 /**
  * Trait ValidationRolesTrait
  *
- * @package Voyula\Validate
+ * @package Voyula\Validate\Traits
  */
 trait ValidationRolesTrait
 {
