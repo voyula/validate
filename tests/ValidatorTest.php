@@ -37,15 +37,15 @@ class ValidatorTest extends TestCase
      */
     public function testTrueValidator(): void
     {
-        $validator->addRules([
+        $this->validator->addRules([
             ['username', 'Username', 'role:username|minLen:3|maxLen:15'],
             ['email', 'Email', 'email|maxLen:100'],
             ['password', 'Password', 'minLen:4|maxLen:25'],
             ['password_again', 'Password Again', 'same:password']
         ]);
 
-        $validator->addRule('postal_code', 'Postal Code', 'digit|len:5');
-        $validator->addRule('item_count', 'Item Count', 'numeric|minNum:5|maxNum:1000');
+        $this->validator->addRule('postal_code', 'Postal Code', 'digit|len:5');
+        $this->validator->addRule('item_count', 'Item Count', 'numeric|minNum:5|maxNum:1000');
 
         $data = [
             'username' => 'panther',
