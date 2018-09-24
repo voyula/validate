@@ -15,7 +15,7 @@ namespace Voyula\Validate;
  */
 class Validation
 {
-    use ValidationRolesTrait;
+    use Traits\ValidationRolesTrait;
 
     /**
      * @param string $string

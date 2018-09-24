@@ -18,7 +18,7 @@ use PHPUnit\Framework\TestCase;
  */
 class ValidationRolesTraitTest extends TestCase
 {
-    use \Voyula\Validate\ValidationRolesTrait;
+    use \Voyula\Validate\Traits\ValidationRolesTrait;
 
     /**
      * @return void
