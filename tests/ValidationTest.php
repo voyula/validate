@@ -14,6 +14,7 @@ use Voyula\Validate\Validation;
 
 /**
  * Class ValidationTest
+ *
  * @package Voyula\Validate\Tests
  */
 class ValidationTest extends TestCase
