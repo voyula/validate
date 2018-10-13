@@ -46,7 +46,7 @@ $validator->addRules([
     ['username', 'Username', 'role:username|minLen:3|maxLen:15'],
     ['email', 'Email', 'email|maxLen:100'],
     ['password', 'Password', 'minLen:4|maxLen:25'],
-    ['password_again', 'Password Again', 'same:password']
+    ['password_confirmation', 'Password Again', 'same:password']
 ]);
 
 $validator->addRule('postal_code', 'Postal Code', 'digit|len:5');
@@ -56,7 +56,7 @@ $data = [
     'username' => 'panther',
     'email' => 'panther@mail.com',
     'password' => 'panther123',
-    'password_again' => 'panther123',
+    'password_confirmation' => 'panther123',
     'postal_code' => '43945',
     'item_count' => '572'
 ];
