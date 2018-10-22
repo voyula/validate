@@ -5,6 +5,7 @@
 [![Scrutinizer Quality Score][ico-scrutinizer]][link-scrutinizer]
 [![Coverage Status][ico-coverage]][link-coverage]
 
+
 [![Stable Version][ico-version]][link-version]
 [![Total Downloads][ico-downloads]][link-downloads]
 [![License][ico-license]][link-license]
