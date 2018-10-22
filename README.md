@@ -22,8 +22,7 @@ $ composer require voyula/validate
 
 ## 🔬 Testing
 
-Via [PHPUNIT](https://phpunit.de/)
-
+Via [PHPUnit](https://phpunit.de/)
 
 ```bash
 $ composer test
