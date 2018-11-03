@@ -31,7 +31,7 @@ class Validator extends Validation
     /**
      * @var array
      */
-    public $errors = [];
+    private $errors = [];
 
     /**
      * Validator constructor.
@@ -85,6 +85,14 @@ class Validator extends Validation
             $this->labels[$item[0]] = $item[1];
             $this->rules[$item[0]]  = $item[2];
         }
+    }
+
+    /**
+     * @return bool
+     */
+    public function errors(): array
+    {
+        return $this->errors;
     }
 
     /**

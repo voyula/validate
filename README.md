@@ -65,7 +65,7 @@ $data = [
 if ($validator->run($data)) {
     echo 'Validated!';
 } else {
-    print_r($validator->errors);
+    print_r($validator->errors());
 }
 
 ```

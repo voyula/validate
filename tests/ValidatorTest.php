@@ -57,7 +57,7 @@ class ValidatorTest extends TestCase
         ];
 
         $this->assertTrue($this->validator->run($data));
-        $this->assertEmpty($this->validator->errors);
+        $this->assertEmpty($this->validator->errors());
     }
 
     /**
@@ -85,6 +85,6 @@ class ValidatorTest extends TestCase
         ];
 
         $this->assertFalse($this->validator->run($data));
-        $this->assertNotEmpty($this->validator->errors);
+        $this->assertNotEmpty($this->validator->errors());
     }
 }
