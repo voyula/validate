@@ -88,7 +88,7 @@ class Validator extends Validation
     }
 
     /**
-     * @return bool
+     * @return array
      */
     public function errors(): array
     {
