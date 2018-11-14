@@ -79,7 +79,7 @@ if ($validator->run($data)) {
 
 ### 🛠 Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
+See [CONTRIBUTING](CONTRIBUTING.md) file for details.
 
 ### 🎙 Credits
 
