@@ -88,9 +88,17 @@ class Validator extends Validation
     }
 
     /**
+     * @return void
+     */
+    private function setError(string $error): void
+    {
+        $this->errors[] = $error;
+    }
+
+    /**
      * @return array
      */
-    public function errors(): array
+    public function getErrors(): array
     {
         return $this->errors;
     }
@@ -122,7 +130,7 @@ class Validator extends Validation
     private function check(array $data, string $name, string $label, array $rules): void
     {
         if (! isset($data[$name])) {
-            $this->errors[] = sprintf($this->lang['req'], $label);
+            $this->setError(sprintf($this->lang['req'], $label));
             return;
         }
 
@@ -134,23 +142,25 @@ class Validator extends Validation
             switch ($func) {
                 case 'same':
                     if ($data[$name] !== $data[$param[0]]) {
-                        $this->errors[] = sprintf($this->lang['same'], $label, $this->labels[$param[0]]);
+                        $this->setError(sprintf($this->lang['same'], $label, $this->labels[$param[0]]));
                         return;
                     }
                     break;
                 case 'role':
                     if (! $this->{$param[0]}($data[$name])) {
-                        $this->errors[] = sprintf($this->lang['roles'][$param[0]], $label);
+                        $this->setError(sprintf($this->lang['roles'][$param[0]], $label));
                         return;
                     }
                     break;
                 default:
                     if (method_exists($this, $func)) {
                         if (! call_user_func_array([$this, $func], array_merge([$data[$name]], $param))) {
-                            $this->errors[] = call_user_func_array('sprintf', array_merge([
-                                $this->lang[$func],
-                                $label
-                            ], $param));
+                            $this->setError(
+                                call_user_func_array('sprintf', array_merge([
+                                    $this->lang[$func],
+                                    $label
+                                ], $param))
+                            );
                             return;
                         }
                     }
