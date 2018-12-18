@@ -116,7 +116,7 @@ class Validator extends Validation
         }
         $this->clean('rules');
 
-        return ! $this->errors();
+        return ! $this->getErrors();
     }
 
     /**
